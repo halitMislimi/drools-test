@@ -1,13 +1,11 @@
-﻿
-#Description
+﻿#Description
 Ce projet est un test de prise en main du moteur de règles Drools. 
-Le but est d'évaluer votre capacité à prendre en main l'utlisation de Drools. Vous pouvez consulter n'importe quelles ressources pour résoudre l'exercice mais vous devez le faire vous même. Cet exercice consiste à réaliser un fichier de config drools pour un petite cas d'utilisation simulant le calcul de rabais lors de l'achat d'un bien en fonction de plusieurs paramètres. Il s'agira ensuite de tester ce fichier graçe à des test unitaires
+Le but est d'évaluer votre capacité à prendre en main l'utilisation de Drools. Vous pouvez consulter n'importe quelles ressources pour résoudre l'exercice mais vous devez le réaliser vous même. Cet exercice consiste à réaliser un fichier de config drools pour un petite cas d'utilisation simulant le calcul de rabais lors de l'achat d'un bien en fonction de plusieurs paramètres. Il s'agira ensuite de tester ce fichier graçe à des test unitaires
 
 Vous devez composer le fichier Regles.xlsx pour y inclure les règles de calcul de la réduction de prix en fonction de l'âge du client, du montant de l'achat et du type du client (VIP ou NORMAL).
 Vous devez executer les tests dans le projet sans modifier le code.
 
-<p>Le fichier Regles.xlsx vide se trouve dans les resources du projet</p>
-
+<p>Le fichier Regles.xlsx vide se trouve dans les resources du projet c'est le seul fichier qui doit être modifié dans le cadre de ce test. Afin d'executer le test il vous faudra installer java, maven et un IDE tel que Eclipse ou IntelliJ</p>
 
 # Niveau 1
 
@@ -104,12 +102,12 @@ N'importe quel client peut avoir un code de réduction en supplément.
 Rajoutez plus de règles dans le fichier Rules.xlsx 
 * "Code1" et "Code2" donnent la réduction supplémentaire de 20%
 * "Code3" donne la réduction supplémentaire de 30%
-* Mettre le champ fullDiscountValue comme la somme des réductions (la réduction du code + discountValue)
-* si fullDiscountValue est supérieur à 40% limiter fullDiscountValue à 40%
+* Mettez le champ fullDiscountValue comme la somme des réductions (la réduction du code + discountValue)
+* Si fullDiscountValue et supérieur à 40% limiter fullDiscountValue à 40%
 
 Mettez la valeur de la réduction dans fullDiscountValue du data object et faites fonctionner le test DroolsLevel2Test
 
-**Astuce**: regarder Stateful Knowledge Session et la fonction _modify_(...)
+**Astuce**: Renseignez vous sur Stateful Knowledge Session et la fonction _modify_(...)
 
 
 
