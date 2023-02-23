@@ -38,6 +38,12 @@ public class DiscountRequest {
 	public Integer getAge() {
 		return age;
 	}
+	
+	public void setMaximumFullDiscountValue() {
+		if( this.fullDiscountValue > 40) {
+			this.fullDiscountValue = 40;
+		}
+	}
 
 	/**
 	 * Sets the age.
@@ -118,6 +124,7 @@ public class DiscountRequest {
 	 */
 	public void setFullDiscountValue(Integer fullDiscountValue) {
 		this.fullDiscountValue = fullDiscountValue;
+		this.setMaximumFullDiscountValue();
 	}
 
 	/** The age. */
